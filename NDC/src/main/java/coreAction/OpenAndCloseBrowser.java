@@ -13,7 +13,7 @@ public class OpenAndCloseBrowser {
 	public WebDriver driver;
 	
 	public WebDriver openUrl(String url) throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver","D:\\SW\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","D:\\SW\\chromedriver.exe");
 		 System.out.println("Opening chrome browser");
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();

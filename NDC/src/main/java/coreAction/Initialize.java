@@ -1,16 +1,19 @@
 package coreAction;
-import org.junit.Before;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import pageElements.LoginTestPE;
+import pageElements.LoginTestPE2;
 import pageFunctions.LoginTestPF;
+
 public class Initialize extends OpenAndCloseBrowser{
 
 	
-	//protected LoginTestPE lpe = new LoginTestPE(driver);
+	protected LoginTestPF lpf ;
+	protected LoginTestPE lpe ;
+	protected LoginTestPE2 lpe2;
 	 
-	 //protected LoginTestPF loginTest;
+	public void initialize() {
+		
+	}
 	 
 	/*
 	 * @Before public void initialize() { //loginTest = new LoginTestPF(driver);

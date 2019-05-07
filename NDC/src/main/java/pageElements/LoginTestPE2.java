@@ -7,12 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import coreAction.ActionDriver;
 
-public class LoginTestPE {
+public class LoginTestPE2 {
 	
 
-	public LoginTestPE(WebDriver driver) {
-		super();
-		
+	public LoginTestPE2(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 	}
 	
 

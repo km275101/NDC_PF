@@ -34,12 +34,6 @@ public class LoginTestPF extends LoginTestPE{
 	
     public void clickYourOrders() {
 		try {
-			//mouseHover(yourOrders);
-			/*
-			 * Actions action = new Actions(driver);
-			 * System.out.println("Start move to element"); Thread.sleep(5000);
-			 * action.moveToElement(yourOrders).build().perform();
-			 */
 			System.out.println("Click on your order button");
 			Thread.sleep(5000);
 			yourOrders.click();
