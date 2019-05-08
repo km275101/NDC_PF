@@ -1,24 +1,18 @@
 package coreAction;
 
-import pageElements.LoginTestPE;
-import pageElements.LoginTestPE2;
+import org.openqa.selenium.support.PageFactory;
 import pageFunctions.LoginTestPF;
 
 public class Initialize extends OpenAndCloseBrowser{
 
+	protected LoginTestPF lpf = PageFactory.initElements(driver, LoginTestPF.class);
 	
-	protected LoginTestPF lpf ;
-	protected LoginTestPE lpe ;
-	protected LoginTestPE2 lpe2;
-	 
+	/*@BeforeMethod
 	public void initialize() {
-		
-	}
+		lpf = PageFactory.initElements(driver, LoginTestPF.class);;
+		//lpf = new LoginTestPF(driver);
+		//pageFunctions.LoginTestPF@64b70919
+	}*/
 	 
-	/*
-	 * @Before public void initialize() { //loginTest = new LoginTestPF(driver);
-	 * loginTestPE = PageFactory.initElements(driver, LoginTestPE.class); //
-	 * loginTestPE = new LoginTestPE(driver); }
-	 */
-	 
+	
 }

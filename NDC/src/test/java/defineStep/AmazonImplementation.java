@@ -10,15 +10,17 @@ import pageFunctions.LoginTestPF;
 
 public class AmazonImplementation extends Initialize{
 	
+	
 	@Given("^users open login page$")
 	public void users_open_login_page() throws Throwable {
 		System.out.println("Opening amazon URL");
-	    openUrl("https://www.amazon.in/");
+	    //openUrl("https://www.amazon.in/");
 	}
 
 	@When("^user enters credentials$")
 	public void user_enters_credentials() throws Throwable {
-		lpf = new LoginTestPF(driver);
+		
+		//lpf = new LoginTestPF(driver);
 		
 		lpf.clickYourOrders();
 		lpf.setUsername("km275101@gmail.com");
@@ -29,8 +31,8 @@ public class AmazonImplementation extends Initialize{
 
 	@And("^click submit button$")
 	public void click_submit_button() throws Throwable {
-		lpe2 = new LoginTestPE2(driver);
-		lpe2.submit.click();
+		/*lpe2 = new LoginTestPE2(driver);
+		lpe2.submit.click();*/
 		
 	}
 

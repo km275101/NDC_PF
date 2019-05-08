@@ -1,7 +1,6 @@
 package pageFunctions;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import pageElements.LoginTestPE;
@@ -10,9 +9,14 @@ public class LoginTestPF extends LoginTestPE{
 	 
 	
 	
-	public LoginTestPF(WebDriver driver) {
+	/*public LoginTestPF(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
+	}*/
+
+	public LoginTestPF(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
 	}
 
 	public void setUsername(String strUser) {
